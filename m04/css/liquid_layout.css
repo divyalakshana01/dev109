@@ -1,7 +1,7 @@
 body {
 	width: 90%;
 	margin: 0 auto;
-	background-image: url("./images/forest_landscape.jpg");
+	background-image: url("../images/forest_landscape.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -92,7 +92,7 @@ li {
 
 #feature {
 	background-color: #8881FF;
-	background-image: url("./images/eagle.png");
+	background-image: url("../images/eagle.png");
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
