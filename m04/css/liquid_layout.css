@@ -1,1 +1,99 @@
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-image: url("./images/forest_landscape.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 0;
 
+}
+
+#header {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'AucaRegular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 50px;
+	color: floralwhite;
+}
+
+#content {
+	overflow: auto;
+}
+
+#nav,
+#feature,
+#footer {
+	margin: 1%;
+	text-align: center;
+}
+
+a {
+	color: white;
+}
+
+.column1,
+.column2,
+.column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+.column3 {
+	margin-right: 0%;
+}
+
+li {
+	display: inline;
+	padding: 0.5em;
+}
+
+#nav {
+	background-color: #202554;
+	color: white;
+	padding: 0.5em 0;
+}
+
+#footer {
+	background-color: #1D098C;
+	padding: 0.5em 0;
+	color: white;
+}
+
+#feature,
+.article {
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #8881FF;
+	color: white;
+}
+
+.column1 {
+	background-color: #E8BFB3;
+	height: 10em;
+	margin-bottom: 1em;
+}
+
+.column2 {
+	background-color: #86AFFF;
+	height: 10em;
+	margin-bottom: 1em;
+}
+
+.column3 {
+	background-color: #FFB99E;
+}
+
+#feature {
+	background-color: #8881FF;
+	background-image: url("./images/eagle.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
