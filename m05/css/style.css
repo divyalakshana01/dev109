@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+@import url(http://fonts.googleapis.com/css2?family=Wellfleet);
 
 body {
 	background-color: #523620;
 	color: #fff;
-	font-family: 'Wellfleet', sans-serif;
+	font-family: 'Wellfleet', times, serif;
 	font-size: 150%;
 	margin: 0px 0px 0px 0px;
 }
