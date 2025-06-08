@@ -155,8 +155,8 @@ function password() {
    var password = document.getElementById("Password").value;
    var errorMessages = "";
 
-   if (password.length > 7 || password === "null" || password === "") {
-      errorMessages = "<p>Invalid Password. Password must have atmost 7 characters</p>";
+   if (password.length > 7 || password === "null" || password === "" || isInValidPassword(password)) {
+      errorMessages = "<p>Invalid Password. Password must have atmost 7 characters, atleast 1 uppercase, 1 lowercase, 1 digit and 1 special character.</p>";
       console.log("Password is invalid");
    } else {
       validPassword = true;
@@ -165,6 +165,22 @@ function password() {
 
    document.getElementById("passwordError").innerHTML = errorMessages;
    return (validPassword);
+}
+
+// E.C: Extra Credit --> Password validation for 1 uppercase, 1 lowercase, 1 digit, 1 special character
+function isInValidPassword(password) {
+    // Check for one uppercase, one lowercase, one number, one special character
+    var errorMessages = "";
+    var uppercaseMatch = password.match(/[A-Z]/g) || [];
+    var lowercaseMatch = password.match(/[a-z]/g) || [];
+    var numberMatch = password.match(/[0-9]/g) || [];
+    var specialMatch = password.match(/[^A-Za-z0-9]/g) || [];
+    if (uppercaseMatch.length < 1 || lowercaseMatch.length < 1 ||
+    numberMatch.length < 1 || specialMatch.length < 1) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // Address Validation
