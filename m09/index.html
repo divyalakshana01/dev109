@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="description" content="Module 09">
+      <meta charset="utf-8">
+      <title>M09 - Module Assignment</title>
+      <link rel="stylesheet" href="./css/add_element.css" type="text/css">
+    </head>
+    <body>
+        <div id="page">
+            <h1 id="header">List</h1>
+            <h2>Buy Groceries</h2>
 
+            <!--The list of items added to the to-do list -->
+            <ul id="todo">
+                <li id="one" class="hot">
+                <em>fresh</em>
+                "figs"
+                </li>
+                <li id="two" class="hot">pine nuts</li>
+                <li id="three" class="hot">honey</li>
+                <li id="four">balsamic vinegar</li>
+                <li>salt</li>
+            </ul>
+
+            <!--Text box for user input and button to add item -->
+            <input type="text" id="itemInput" name="newElement">
+            <button onclick="addElement()">Add new grocery item</button>
+
+            <!--Error message when empty user input is added -->
+            <p id="errorMsg" style="color: red;"></p>
+        </div>
+        <script src="./js/add_element.js"></script>
+    </body>
+</html>
