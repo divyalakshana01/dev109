@@ -6,9 +6,11 @@
       <title>Artifact #3</title>
    </head>
    <body>
+      <!-- Label for user input for size -->
       <label>What is the size of Rhombus?</label><br>
       <input type="text" id="rHeight" value="5" size="5">
       <br>
+      <!-- Label for even position color input-->
       <label>Choose color for Even position</label><br>
       <select id="colorEven">
          <option value="#0000FF">Blue</option>
@@ -16,6 +18,7 @@
          <option value="#FF9900">Orange</option>
       </select>
       <br>
+      <!-- Label for odd position color input-->
       <label>Choose color for Odd position</label><br>
       <select id="colorOdd">
          <option value="#FF0099">Pink</option>
@@ -23,6 +26,7 @@
          <option value="#660099">Purple</option>
       </select>
       <br>
+      <!-- Label for symbol input-->
       <label>Choose symbol for Rhombus</label>
       <select id="symbol">
          <option value="*">*</option>
@@ -30,15 +34,18 @@
          <option value="@">@</option>
       </select>
       <br>
+      <!-- Javascript function to create a rhombus when button is clicked-->
       <button onclick="createRhombus(document.getElementById('rHeight').value,
          document.getElementById('colorEven').value,
          document.getElementById('colorOdd').value,
          document.getElementById('symbol').value);">Display Rhombus</button><br>
+      <!-- ids for Upper part of rhombus -->
       <div id="upLeft"></div>
       <div id="upRight"></div>
       <br>
+      <!-- ids for lower part of rhombus -->
       <div id="downLeft"></div>
       <div id="downRight"></div>
-      <script src="./rhombus.js"></script>
+      <script src="./js/rhombus.js"></script>
    </body>
 </html>
