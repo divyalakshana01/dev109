@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Spy Game</title>
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+</head>
+<body>
+  <h1>I Spy Game!</h1>
+  <p>See if you can find the following objects in the picture. Once you find them, click on them.</p>
 
+  <div id="game-container">
+    <img id="game-image" src="./images/hidden-image3.jpg" usemap="#game-map" alt="Find the objects">
+
+    <map name="game-map" id="game-map">
+      <area shape="rect" coords="437,308,496,264" href="#" alt="tissue roll">
+      <area shape="rect" coords="236,34,207,4" href="#" alt="digital clock">
+      <area shape="rect" coords="268,310,237,276" href="#" alt="Button">
+    </map>
+  </div>
+
+  <ul id="object-list">
+    <li id="tissue">Tissue Roll</li>
+    <li id="clock">Digital Clock</li>
+    <li id="button">Button</li>
+  </ul>
+
+  <button id="replay" onclick="replay()">Play Again</button>
+  <script src="./js/script.js"></script>
+</body>
+</html>
