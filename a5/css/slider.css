@@ -1,1 +1,44 @@
+.slider {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider img{
+	width: 80%;
+	height: 20%;
+	display: none;
 
+}
+img.displaySlide{
+	display: block;
+
+}
+.slider button{
+	position: fixed;
+	top: 90%;
+	font-size: 2rem;
+	background-color: hsla(0, 0%, 0%, 0.5);
+	color: white;
+	border: none;
+	margin-top: 50px;
+}
+.previous{
+	left: 0;
+}
+.next{
+	right: 0;
+}
+
+#slider-timer{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family:Arial, sans-serif;
+	z-index:1000;
+}
