@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="Artifact 5">
-      <title>A5 - Carousel</title>
-      <link rel="stylesheet" href="./css/slider.css" type="text/css">
-   </head>
-   <body>
-      <div id="slider-timer">4</div>
-      <div class="slider">
-      <div class="slides">
-         <img class="slide" src="./images/burger.jpg" alt="Burger pic">
-         <img class="slide" src="./images/pizza-plate.jpg" alt="Pizza on a plate">
-         <img class="slide" src="./images/mojitos.jpg" alt="Three mojitos on a table">
-         <img class="slide" src="./images/frenchfries.jpg" alt="Frencj fries">
-      </div>
-      <button class="prev" onclick="prevSlide()">Previous</button>
-      <button class="next" onclick="nextSlide()">Next</button>
-      <script src="./js/slider.js"></script>
-   </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Artifact 5</title>
+    <link rel="stylesheet" href="../css/a5.css" type="text/css">
+</head>
+<body>
+
+	<!-- Main container that holds the entire slider -->
+	<div id="slider-container">	
+
+		<!-- Image container -->	
+		<div class="slider">
+			<!-- Initial image shownin the slider -->
+			<img class="slide displaySlide" src="../images/burger.jpg" alt="Burger pic">
+		</div>
+		<!-- Text description for the current image -->
+		<div class="description">A juicy burger with fresh ingredients</div>
+
+		<!-- Navigation buttons to move between images -->
+		<div class="controls">
+			<button class="prev" onclick="prevSlide()">Previous</button>
+			<button class="next" onclick="nextSlide()">Next</button>
+		</div>
+
+		<!-- Countdown timer display -->
+		<div id="slider-timer">4</div>
+	</div>
+				
+	<script src="../js/a5.js"></script>
+</body>
 </html>
+
