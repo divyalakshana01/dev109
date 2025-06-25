@@ -1,22 +1,22 @@
 // Initialize array of slide objects containing image source, alt text, description
 const slides = [
 	{ 
-		src: "../images/burger.jpg",
+		src: "./images/burger.jpg",
 		alt: "Burger pic",
 		desc: "Five juicy burgers with fresh ingredients on a wooden board."
 	},
 	{
-		src: "../images/pizza-plate.jpg",
+		src: "./images/pizza-plate.jpg",
 		alt: "Pizza on a plate",
 		desc: "Delicious pizza served on a plate placed on table."
 	},
 	{
-		src: "../images/mojitos.jpg",
+		src: "./images/mojitos.jpg",
 		alt: "Three mojitos on a table",
 		desc: "Three mojito-filled glasses nestled among scattered ice cubes"
 	},
 	{
-		src:"../images/frenchfries.jpg",
+		src:"./images/frenchfries.jpg",
 		alt: "French fries",
 		desc: "Brown, crispy French fries served on brown parchment paper"
 	}
